@@ -1,0 +1,194 @@
+@charset "utf-8"
+
+@font-face
+    font-family: "geomanist"
+    src: url('assets/fonts/geomanist-regular-webfont.eot')
+    src: url('assets/fonts/geomanist-regular-webfont.woff') format('woff')
+    src: url('assets/fonts/geomanist-regular-webfont.woff2') format('woff2')
+    src: url('assets/fonts/geomanist-regular-webfont.svg#geomanist') format('svg')
+    src: url('assets/fonts/geomanist-regular-webfont.ttf') format("truetype")
+
+// Beand Colors
+$white: #ffffff
+$brown: #444444
+$blue: #043d67
+$blue-light: #13A2e8
+$blue-lighter: #9db7cd
+$black: #0a0d25
+
+// Bulma's global variables
+$family-sans-serif: 'geomanist', sans-serif
+$primary: $white
+$link: $blue-light
+$label-color: $white
+$widescreen-enabled: false
+$fullhd-enabled: false
+
+$body-background-color: $black
+$control-border-width: 2px
+$input-border-color: transparent
+$input-shadow: none
+
+// $table-color: #757763
+// $table-background-color: transparent
+// $table-head-background-color: #757763
+// $table-body-background-color: #757763
+
+//$radius-rounded: 290486px !default
+
+// Import only what you need from Bulma
+@import '../node_modules/bulma/sass/utilities/_all.sass'
+@import '../node_modules/bulma/sass/base/_all.sass'
+@import '../node_modules/bulma/sass/elements/button.sass'
+@import '../node_modules/bulma/sass/elements/container.sass'
+@import '../node_modules/bulma/sass/elements/form.sass'
+@import '../node_modules/bulma/sass/elements/title.sass'
+@import '../node_modules/bulma/sass/components/navbar.sass'
+@import '../node_modules/bulma/sass/layout/hero.sass'
+@import '../node_modules/bulma/sass/layout/section.sass'
+
+// .hero
+//   &.has-background
+//     position: relative
+//     overflow: hidden
+//   &-background
+//     position: fixed
+//     object-fit: coverßß
+//     object-position: center center
+//     width: 100%
+//     height: 100%
+
+    // &.is-transparent
+    //   opacity: 0.3
+
+// .table
+//   &.is-transparent
+//   margin-left: auto
+//   margin-right: auto
+//   background-color: transparent
+//   border-collapse:separate
+//   border-spacing: 0 15px
+  // thead
+  //   tr
+  //     th
+  //     &.table-filters
+  //     color: #FFF !important
+  //     &.table-header
+  //     // background-color: blue
+  //     opacity: 0.3
+  // tbody
+  //   tr
+  //     background-color: white
+  //     color: black
+
+
+body
+  min-height: 100%
+.app
+  background: url(assets/background.jpg) no-repeat center center fixed
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  height: 100vh
+
+.title
+  font-size: 64px
+
+.filters
+  background: rgba(255, 255, 255, 0.1) no-repeat
+  color: white;
+  .column
+    border: 1px #ffffff solid;
+    border-radius: 8px 8px 0px 0px;
+
+.button
+  &.refresh
+    background: url('assets/Refresh Button.png') 
+    background-position: -20px -19px
+    background-repeat: no-repeat
+    border: 1px #ffffff solid;
+    border-radius: 9999px;
+    width: 34px
+    height: 34px
+
+/* Customize the label */
+label
+  &.checkbox
+    padding-left: 5px
+    padding-top: 3px
+    font-size: 14px
+  &.checkbox:hover
+    color: white;
+
+/* Hide the browser's default checkbox */
+input
+  &checkbox
+  position: absolute
+  opacity: 0
+  cursor: pointer
+  height: 0
+  width: 0
+
+/* Create a custom checkbox */
+.checkmark
+  position: absolute
+  top: 0
+  left: -23px
+  height: 22px
+  width: 22px
+  border: 1px #ffffff solid
+  border-radius: 3px
+  background-color: transparent
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after
+  content: ""
+  position: absolute
+  display: none
+
+/* Show the checkmark when checked */
+.checkbox input:checked ~ .checkmark:after
+  display: block
+
+/* Style the checkmark/indicator */
+.checkbox .checkmark:after
+  left: 8px
+  top: 1px
+  width: 9px
+  height: 15px
+  border: solid #13A2e8
+  border-width: 0 3px 3px 0
+  -webkit-transform: rotate(45deg)
+  -ms-transform: rotate(45deg)
+  transform: rotate(45deg)
+
+.level-right
+  .level-item
+    padding-left: 25px
+
+.table-header
+  .column
+    color: #043d67
+    font-weight: bold
+    font-size: 17px
+    background: linear-gradient(#9db7cd, #FFFFFF)
+
+.table-row
+  margin-top: 5px
+  .column
+    color: #444444
+    font-size: 15px
+    background: rgba(255, 255, 255, 0.85);
+    padding-top: 20px
+    padding-bottom: 20px
+    
+
+.first
+  border-radius: 8px 0px 0px 8px
+  background: rgba(255, 255, 255, 0.55);
+
+.last
+  border-radius: 0px 8px 8px 0px
+  background: rgba(255, 255, 255, 0.55);
+
