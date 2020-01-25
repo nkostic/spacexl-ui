@@ -81,16 +81,14 @@ $input-shadow: none
   //     background-color: white
   //     color: black
 
-
-body
-  min-height: 100%
-.app
+html 
   background: url(assets/background.jpg) no-repeat center center fixed
   -webkit-background-size: cover
   -moz-background-size: cover
   -o-background-size: cover
   background-size: cover
-  height: 100vh
+  height: 100%
+  overflow: hidden
 
 .title
   font-size: 64px
@@ -104,13 +102,22 @@ body
 
 .button
   &.refresh
-    background: url('assets/Refresh Button.png') 
-    background-position: -20px -19px
+    background: url('assets/refresh.png') 
+    background-position: 4px 4px
     background-repeat: no-repeat
     border: 1px #ffffff solid;
     border-radius: 9999px;
     width: 34px
     height: 34px
+  &.refresh:hover
+    background: url('assets/refreshblue.png')
+    background-position: 4px 4px
+    background-repeat: no-repeat
+    border: 1px #ffffff solid;
+    border-radius: 9999px;
+    width: 34px
+    height: 34px
+  
 
 /* Customize the label */
 label

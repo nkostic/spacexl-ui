@@ -12,7 +12,9 @@ const App = () => (
       <section className="hero">
         <div className="hero-body">
           <div className="container">
-            <h1 className="title has-text-centered has-text-white">SpaceX Launches</h1>
+            <h1 className="title has-text-centered has-text-white">
+              SpaceX Launches
+            </h1>
           </div>
         </div>
       </section>
@@ -52,8 +54,8 @@ const App = () => (
                 </div>
               </div>
             </div>
-            
           </div>
+
           <div className="columns table-header">
             <div className="column">
               <div className="columns">
@@ -81,6 +83,7 @@ const App = () => (
               </div>
             </div>
           </div>
+
           <div className="columns ">
             <div className="column">
               <div className="columns table-row">
@@ -108,6 +111,7 @@ const App = () => (
               </div>
             </div>
           </div>
+
         </div>
       </section>
     </section>
