@@ -29,13 +29,6 @@ $control-border-width: 2px
 $input-border-color: transparent
 $input-shadow: none
 
-// $table-color: #757763
-// $table-background-color: transparent
-// $table-head-background-color: #757763
-// $table-body-background-color: #757763
-
-//$radius-rounded: 290486px !default
-
 // Import only what you need from Bulma
 @import '../node_modules/bulma/sass/utilities/_all.sass'
 @import '../node_modules/bulma/sass/base/_all.sass'
@@ -47,40 +40,6 @@ $input-shadow: none
 @import '../node_modules/bulma/sass/layout/hero.sass'
 @import '../node_modules/bulma/sass/layout/section.sass'
 
-// .hero
-//   &.has-background
-//     position: relative
-//     overflow: hidden
-//   &-background
-//     position: fixed
-//     object-fit: coverßß
-//     object-position: center center
-//     width: 100%
-//     height: 100%
-
-    // &.is-transparent
-    //   opacity: 0.3
-
-// .table
-//   &.is-transparent
-//   margin-left: auto
-//   margin-right: auto
-//   background-color: transparent
-//   border-collapse:separate
-//   border-spacing: 0 15px
-  // thead
-  //   tr
-  //     th
-  //     &.table-filters
-  //     color: #FFF !important
-  //     &.table-header
-  //     // background-color: blue
-  //     opacity: 0.3
-  // tbody
-  //   tr
-  //     background-color: white
-  //     color: black
-
 html 
   background: url(assets/background.jpg) no-repeat center center fixed
   -webkit-background-size: cover
@@ -88,7 +47,7 @@ html
   -o-background-size: cover
   background-size: cover
   height: 100%
-  overflow: hidden
+  // overflow: hidden
 
 .title
   font-size: 64px
@@ -189,6 +148,8 @@ input
     background: rgba(255, 255, 255, 0.85);
     padding-top: 20px
     padding-bottom: 20px
+    display: flex;
+    align-items: center
     
 
 .first
@@ -198,4 +159,3 @@ input
 .last
   border-radius: 0px 8px 8px 0px
   background: rgba(255, 255, 255, 0.55);
-
