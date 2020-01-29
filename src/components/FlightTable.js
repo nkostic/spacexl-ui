@@ -1,5 +1,6 @@
 /* eslint react/no-did-mount-set-state: 0 */
 import React, { PureComponent } from "react";
+import axios from 'axios';
 //mport Checkbox from "./Checkbox";
 import FlightTableRow from "./FlightTableRow";
 
@@ -19,14 +20,24 @@ class FlightTable extends PureComponent {
     this.handleChange = this.handleChange.bind(this);
   }
 
-  async fetch() {
-    console.log('state',this.state)
+  fetch() {
     try {
-      const res = await fetch(`http://localhost:3000/api/get/flights/land/${this.state.land}/reused/${this.state.reused}/with/${this.state.with}`);
-      const flights = await res.json();
-      this.setState({
-        flights
-      });
+      const filters = {
+        land: this.state.land,
+        reused: this.state.reused,
+        with: this.state.with
+      }
+
+      axios.post(`${process.env.REACT_APP_API_URL}/api/get/flights`, { filters })
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
+        const flights = res.data;
+        this.setState({
+          flights
+        });
+      })
+
     } catch (e) {
       console.log(e);
     }
