@@ -80,8 +80,8 @@ class FlightTable extends PureComponent {
           <div className="columns filters">
             <div className="column">
               <div className="level">
-                <div className="level-left">
-                  <div className="level-item">
+                <div className="level-left is-inline-mobile">
+                  <div className="level-item is-inline-mobile">
                     <button
                       onClick={this.fetch}
                       className="button refresh"
@@ -89,7 +89,7 @@ class FlightTable extends PureComponent {
                   </div>
                 </div>
                 <div className="level-right">
-                  <div className="level-item">
+                  <div className="level-item is-inline-mobile">
                     <label className="checkbox">
                       LAND
                       <input type="checkbox" 
@@ -100,7 +100,7 @@ class FlightTable extends PureComponent {
                       <span className="checkmark"></span>
                     </label>
                   </div>
-                  <div className="level-item">
+                  <div className="level-item is-inline-mobile">
                     <label className="checkbox">
                       REUSED
                       <input type="checkbox" 
@@ -111,7 +111,7 @@ class FlightTable extends PureComponent {
                       <span className="checkmark"></span>
                     </label>
                   </div>
-                  <div className="level-item">
+                  <div className="level-item is-inline-mobile">
                     <label className="checkbox">
                       WITH REDDIT
                       <input type="checkbox" 
