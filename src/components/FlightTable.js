@@ -3,6 +3,7 @@ import React, { PureComponent } from "react";
 import axios from 'axios';
 //mport Checkbox from "./Checkbox";
 import FlightTableRow from "./FlightTableRow";
+import Spinner from 'react-spinkit';
 
 class FlightTable extends PureComponent {
 
@@ -13,7 +14,8 @@ class FlightTable extends PureComponent {
       flights: [],
       land: false,
       reused: false,
-      with: false
+      with: false,
+      loading : true
     }
 
     this.fetch = this.fetch.bind(this);
@@ -22,6 +24,11 @@ class FlightTable extends PureComponent {
 
   fetch() {
     try {
+
+      this.setState({
+        loading: true
+      });
+
       const filters = {
         land: this.state.land,
         reused: this.state.reused,
@@ -31,10 +38,11 @@ class FlightTable extends PureComponent {
       axios.post(`${process.env.REACT_APP_API_URL}/api/get/flights`, { filters })
       .then(res => {
         console.log(res);
-        console.log(res.data);
-        const flights = res.data;
+        console.log(res.data.results);
+        const flights = res.data.results;
         this.setState({
-          flights
+          flights,
+          loading: false
         });
       })
 
@@ -132,10 +140,19 @@ class FlightTable extends PureComponent {
               </div>
             </div>
           </div>
-
+          
           {this.state.flights.map(flight => (
             <FlightTableRow key={flight.id} flight={flight} />
           ))}
+
+          {this.state.loading && 
+            <div className="columns is-centered">
+              <div className="column has-text-centered is-1 loading">
+                <Spinner name='ball-scale-multiple' color="white"/>
+              </div>
+            </div>
+          }
+          
         </div>
       </section>
     );
