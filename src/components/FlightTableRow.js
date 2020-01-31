@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { format } from "date-fns";
 import Placeholder from "../assets/placeholder-small.png";
 import LinkIco from "../assets/link.png";
-import Excerpt from "../lib/Excerpt.js";
+import Excerpt from "./Excerpt";
 
 const FlightTableRow = ({ flight }) => (
   <div className="columns">
@@ -18,27 +18,27 @@ const FlightTableRow = ({ flight }) => (
           </figure>
         </div>
         <div className="column">
-          <p className="mobile-header">Rocket Name:</p>
+          <span className="mobile-header">Rocket Name:</span>
           {flight.rocket_name}
         </div>
         <div className="column">
-          <p className="mobile-header">Rocket Type:</p>
+          <span className="mobile-header">Rocket Type:</span>
           {flight.rocket_type}
         </div>
         <div className="column">
-          <p className="mobile-header">Launch Date:</p>
+          <span className="mobile-header">Launch Date:</span>
           {format(new Date(flight.launch_date), "MM/dd/yyyy")}
         </div>
         <div className="column is-4">
-          <p className="mobile-details">{flight.details}</p>
-          <p className="is-hidden-mobile">{Excerpt(flight.details, 111)}</p>
+          <span className="mobile-details">{flight.details}</span>
+          <span className="is-hidden-mobile">{Excerpt(flight.details, 111)}</span>
         </div>
         <div className="column is-1">
-          <p className="mobile-header">ID:</p>
+          <span className="mobile-header">ID:</span>
           {flight.flight_number}
         </div>
         <div className="column last is-1">
-          <p className="mobile-header">Article:</p>
+          <span className="mobile-header">Article:</span>
           <a
             href={flight.article_link}
             target="_blank"

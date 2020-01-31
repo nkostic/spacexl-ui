@@ -34,10 +34,8 @@ $input-shadow: none
 @import '../node_modules/bulma/sass/base/_all.sass'
 @import '../node_modules/bulma/sass/elements/button.sass'
 @import '../node_modules/bulma/sass/elements/container.sass'
-// @import '../node_modules/bulma/sass/elements/form.sass'
 @import '../node_modules/bulma/sass/elements/title.sass'
-// @import '../node_modules/bulma/sass/components/navbar.sass'
-// @import '../node_modules/bulma/sass/layout/hero.sass'
+@import '../node_modules/bulma/sass/layout/hero.sass'
 @import '../node_modules/bulma/sass/layout/section.sass'
 
 html 
@@ -188,7 +186,15 @@ input
 
   .mobile-header
     display:block !important
+
   .table-row
     .column
       &.first
         display: block;
+
+  .section
+    padding-top: 0 !important
+
+  .table-header
+    .column
+      font-size: 10px

@@ -1,7 +1,6 @@
 /* eslint react/no-did-mount-set-state: 0 */
 import React, { PureComponent } from "react";
 import axios from 'axios';
-//mport Checkbox from "./Checkbox";
 import FlightTableRow from "./FlightTableRow";
 import Spinner from 'react-spinkit';
 
@@ -111,7 +110,8 @@ class FlightTable extends PureComponent {
                   </div>
                   <div className="level-item is-inline-mobile">
                     <label className="checkbox">
-                      WITH REDDIT
+                      <span className="is-hidden-mobile">WITH </span>
+                      <span>REDDIT</span>
                       <input type="checkbox" 
                         name="with"
                         onChange={this.handleChange}
