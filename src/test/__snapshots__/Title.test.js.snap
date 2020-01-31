@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Title></Title> 1`] = `
+<section
+  class="hero"
+>
+  <div
+    class="hero-body"
+  >
+    <div
+      class="container"
+    >
+      <h1
+        class="title has-text-centered has-text-white"
+      >
+        SpaceX Launches
+      </h1>
+    </div>
+  </div>
+</section>
+`;

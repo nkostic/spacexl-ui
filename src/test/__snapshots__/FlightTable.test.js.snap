@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FlightTable/> 1`] = `
+<section
+  class="section"
+>
+  <div
+    class="container"
+  >
+    <div
+      class="columns filters"
+    >
+      <div
+        class="column"
+      >
+        <div
+          class="level"
+        >
+          <div
+            class="level-left is-inline-mobile"
+          >
+            <div
+              class="level-item is-inline-mobile"
+            >
+              <button
+                class="button refresh"
+              />
+            </div>
+          </div>
+          <div
+            class="level-right is-inline-mobile"
+          >
+            <div
+              class="level-item is-inline-mobile"
+            >
+              <label
+                class="checkbox"
+              >
+                LAND
+                <input
+                  name="land"
+                  type="checkbox"
+                />
+                <span
+                  class="checkmark"
+                />
+              </label>
+            </div>
+            <div
+              class="level-item is-inline-mobile"
+            >
+              <label
+                class="checkbox"
+              >
+                REUSED
+                <input
+                  name="reused"
+                  type="checkbox"
+                />
+                <span
+                  class="checkmark"
+                />
+              </label>
+            </div>
+            <div
+              class="level-item is-inline-mobile"
+            >
+              <label
+                class="checkbox"
+              >
+                <span
+                  class="is-hidden-mobile"
+                >
+                  WITH 
+                </span>
+                <span>
+                  REDDIT
+                </span>
+                <input
+                  name="with"
+                  type="checkbox"
+                />
+                <span
+                  class="checkmark"
+                />
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="columns table-header is-hidden-mobile"
+    >
+      <div
+        class="column"
+      >
+        <div
+          class="columns"
+        >
+          <div
+            class="column is-1"
+          >
+            Badge
+          </div>
+          <div
+            class="column"
+          >
+            Rocket Name
+          </div>
+          <div
+            class="column"
+          >
+            Rocket Type
+          </div>
+          <div
+            class="column"
+          >
+            Launch Date
+          </div>
+          <div
+            class="column is-4"
+          >
+            Details
+          </div>
+          <div
+            class="column is-1"
+          >
+            ID
+          </div>
+          <div
+            class="column is-1"
+          >
+            Article
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="columns is-centered"
+    >
+      <div
+        class="column has-text-centered is-1 loading"
+      >
+        <div
+          class="sk-fade-in sk-spinner ball-scale-multiple"
+          color="white"
+          style="color: white;"
+        >
+          <div />
+          <div />
+          <div />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

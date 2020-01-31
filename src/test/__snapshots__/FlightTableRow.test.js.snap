@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FlightTableRow/> 1`] = `
+<div
+  class="columns"
+>
+  <div
+    class="column"
+  >
+    <div
+      class="columns table-row is-centered"
+    >
+      <div
+        class="column is-1 has-text-centered first"
+      >
+        <figure
+          class="image mobile"
+        >
+          <img
+            alt="Mission Patch"
+            data-testid="flight-image"
+            src="https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png"
+          />
+        </figure>
+      </div>
+      <div
+        class="column"
+      >
+        <span
+          class="mobile-header"
+        >
+          Rocket Name:
+        </span>
+        Falcon 1
+      </div>
+      <div
+        class="column"
+      >
+        <span
+          class="mobile-header"
+        >
+          Rocket Type:
+        </span>
+        Merlin A
+      </div>
+      <div
+        class="column"
+      >
+        <span
+          class="mobile-header"
+        >
+          Launch Date:
+        </span>
+        03/24/2006
+      </div>
+      <div
+        class="column is-4"
+      >
+        <span
+          class="mobile-details"
+        />
+        <span
+          class="is-hidden-mobile"
+        >
+          No Details
+        </span>
+      </div>
+      <div
+        class="column is-1"
+      >
+        <span
+          class="mobile-header"
+        >
+          ID:
+        </span>
+        1001
+      </div>
+      <div
+        class="column last is-1"
+      >
+        <span
+          class="mobile-header"
+        >
+          Article:
+        </span>
+        <a
+          data-testid="flight-link"
+          href="https://www.space.com/2196-spacex-inaugural-falcon-1-rocket-lost-launch.html"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="Link Graphic"
+            src="link.png"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

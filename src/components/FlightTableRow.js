@@ -14,6 +14,7 @@ const FlightTableRow = ({ flight }) => (
             <img
               src={flight.mission_patch_small || Placeholder}
               alt="Mission Patch"
+              data-testid="flight-image"
             />
           </figure>
         </div>
@@ -43,6 +44,7 @@ const FlightTableRow = ({ flight }) => (
             href={flight.article_link}
             target="_blank"
             rel="noopener noreferrer"
+            data-testid="flight-link"
           >
             <img src={LinkIco} alt="Link Graphic" />
           </a>
@@ -61,9 +63,7 @@ FlightTableRow.propTypes = {
     mission_patch_small: PropTypes.string,
     details: PropTypes.string,
     flight_number: PropTypes.number.isRequired,
-    article_link: PropTypes.string.isRequired,
-    land_success: PropTypes.bool.isRequired,
-    reused: PropTypes.bool.isRequired
+    article_link: PropTypes.string.isRequired
   }).isRequired
 };
 

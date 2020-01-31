@@ -1,6 +1,4 @@
 import React from "react";
-// import axios from 'axios';
-// import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./App.sass";
 import FlightTable from "./components/FlightTable";
