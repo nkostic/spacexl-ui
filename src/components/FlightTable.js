@@ -37,8 +37,6 @@ class FlightTable extends PureComponent {
 
       axios.post(`${process.env.REACT_APP_API_URL}/api/get/flights`, { filters })
       .then(res => {
-        console.log(res);
-        console.log(res.data.results);
         const flights = res.data.results;
         this.setState({
           flights,
@@ -88,7 +86,7 @@ class FlightTable extends PureComponent {
                     ></button>
                   </div>
                 </div>
-                <div className="level-right">
+                <div className="level-right is-inline-mobile">
                   <div className="level-item is-inline-mobile">
                     <label className="checkbox">
                       LAND
@@ -127,7 +125,7 @@ class FlightTable extends PureComponent {
             </div>
           </div>
 
-          <div className="columns table-header">
+          <div className="columns table-header is-hidden-mobile">
             <div className="column">
               <div className="columns">
                 <div className="column is-1">Badge</div>

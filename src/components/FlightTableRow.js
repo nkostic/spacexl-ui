@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { format } from 'date-fns'
+import { format } from "date-fns";
 import Placeholder from "../assets/placeholder-small.png";
 import LinkIco from "../assets/link.png";
 import Excerpt from "../lib/Excerpt.js";
@@ -8,19 +8,37 @@ import Excerpt from "../lib/Excerpt.js";
 const FlightTableRow = ({ flight }) => (
   <div className="columns">
     <div className="column">
-      <div className="columns table-row">
-        <div className="column first is-1">
-          <img
-            src={flight.mission_patch_small || Placeholder}
-            alt="Mission Patch"
-          />
+      <div className="columns table-row is-centered">
+        <div className="column is-1 has-text-centered first">
+          <figure className="image mobile">
+            <img
+              src={flight.mission_patch_small || Placeholder}
+              alt="Mission Patch"
+            />
+          </figure>
         </div>
-        <div className="column">{flight.rocket_name}</div>
-        <div className="column">{flight.rocket_type}</div>
-        <div className="column">{ format(new Date(flight.launch_date), 'MM/dd/yyyy') }</div>
-        <div className="column is-4">{Excerpt(flight.details, 35)}</div>
-        <div className="column is-1">{flight.flight_number}</div>
+        <div className="column">
+          <p className="mobile-header">Rocket Name:</p>
+          {flight.rocket_name}
+        </div>
+        <div className="column">
+          <p className="mobile-header">Rocket Type:</p>
+          {flight.rocket_type}
+        </div>
+        <div className="column">
+          <p className="mobile-header">Launch Date:</p>
+          {format(new Date(flight.launch_date), "MM/dd/yyyy")}
+        </div>
+        <div className="column is-4">
+          <p className="mobile-details">{flight.details}</p>
+          <p className="is-hidden-mobile">{Excerpt(flight.details, 111)}</p>
+        </div>
+        <div className="column is-1">
+          <p className="mobile-header">ID:</p>
+          {flight.flight_number}
+        </div>
         <div className="column last is-1">
+          <p className="mobile-header">Article:</p>
           <a
             href={flight.article_link}
             target="_blank"

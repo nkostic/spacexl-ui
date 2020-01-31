@@ -34,10 +34,10 @@ $input-shadow: none
 @import '../node_modules/bulma/sass/base/_all.sass'
 @import '../node_modules/bulma/sass/elements/button.sass'
 @import '../node_modules/bulma/sass/elements/container.sass'
-@import '../node_modules/bulma/sass/elements/form.sass'
+// @import '../node_modules/bulma/sass/elements/form.sass'
 @import '../node_modules/bulma/sass/elements/title.sass'
-@import '../node_modules/bulma/sass/components/navbar.sass'
-@import '../node_modules/bulma/sass/layout/hero.sass'
+// @import '../node_modules/bulma/sass/components/navbar.sass'
+// @import '../node_modules/bulma/sass/layout/hero.sass'
 @import '../node_modules/bulma/sass/layout/section.sass'
 
 html 
@@ -47,7 +47,6 @@ html
   -o-background-size: cover
   background-size: cover
   height: 100%
-  // overflow: hidden
 
 .title
   font-size: 64px
@@ -64,24 +63,26 @@ html
     background: url('assets/refresh.png') 
     background-position: 4px 4px
     background-repeat: no-repeat
-    border: 1px #ffffff solid;
+    border: 1px #ffffff solid
     border-radius: 9999px;
     width: 34px
     height: 34px
+    margin-right: 10px
+    margin-bottom: 10px
   &.refresh:hover
     background: url('assets/refreshblue.png')
     background-position: 4px 4px
     background-repeat: no-repeat
-    border: 1px #ffffff solid;
+    border: 1px #ffffff solid
     border-radius: 9999px;
     width: 34px
     height: 34px
-  
 
 /* Customize the label */
 label
   &.checkbox
     padding-left: 5px
+    padding-right: 15px
     padding-top: 3px
     font-size: 14px
   &.checkbox:hover
@@ -145,7 +146,7 @@ input
   .column
     color: #444444
     font-size: 15px
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.85)
     padding-top: 20px
     padding-bottom: 20px
     display: flex;
@@ -154,11 +155,40 @@ input
 
 .first
   border-radius: 8px 0px 0px 8px
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.55)
 
 .last
   border-radius: 0px 8px 8px 0px
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.55)
 
 .loading
   margin-top: 40px
+
+.mobile-details
+  display:none !important
+
+.mobile-header
+  display:none !important
+  color: #043d67
+  font-weight: bold
+  font-size: 17px
+  margin-right: 5px
+
+@media screen and (max-width: 768px)
+  .first
+    border-radius: 8px 8px 0px 0px
+    background: rgba(255, 255, 255, 0.55)
+
+  .last
+    border-radius: 0px 0px 8px 8px
+    background: rgba(255, 255, 255, 0.55)
+
+  .mobile-details
+    display:block !important
+
+  .mobile-header
+    display:block !important
+  .table-row
+    .column
+      &.first
+        display: block;
