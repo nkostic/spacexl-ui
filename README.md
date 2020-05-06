@@ -2,9 +2,11 @@
 ### Author: Nenad Kostic
 [![Netlify Status](https://api.netlify.com/api/v1/badges/712e9f53-a7b9-43bd-a642-49fb7394ff40/deploy-status)](https://app.netlify.com/sites/spacexl/deploys)
 
-This is example of a front end.
+This is example of a front end implementation with React JS.
 
-Demo of this app is publicly available on Netlify: https://spacexl.netlify.com/
+![SpaceX Launches Screenshoot](https://spacexl.netlify.app/spacexl_screenshoot.png)
+
+Demo is publicly available on Netlify: https://spacexl.netlify.com/
 
 API for this app is publicly exposed on heroku free tier: https://spacexl-api.herokuapp.com/
 
