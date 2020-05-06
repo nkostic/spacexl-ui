@@ -2,7 +2,7 @@
 ### Author: Nenad Kostic
 [![Netlify Status](https://api.netlify.com/api/v1/badges/712e9f53-a7b9-43bd-a642-49fb7394ff40/deploy-status)](https://app.netlify.com/sites/spacexl/deploys)
 
-This is example app not a real app.
+This is example of a front end.
 
 Demo of this app is publicly available on Netlify: https://spacexl.netlify.com/
 
